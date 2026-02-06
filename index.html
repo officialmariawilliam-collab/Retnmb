@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Auto Video Click Ad</title>
+
+<style>
+body{
+  background:#111;
+  font-family:sans-serif;
+}
+.video-box{
+  width:100%;
+  max-width:360px;
+  aspect-ratio:16/9;
+  margin:20px auto;
+  border-radius:12px;
+  overflow:hidden;
+  position:relative;
+  cursor:pointer;
+}
+video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.download{
+  display:block;
+  width:200px;
+  margin:10px auto 30px;
+  text-align:center;
+  background:#e74c3c;
+  color:#fff;
+  padding:10px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- VIDEO 1 -->
+<div class="video-box" onclick="goAd('AD_LINK_1')">
+  <video muted autoplay loop playsinline>
+    <source src="https://files.catbox.moe/rxr3bj.mp4" type="video/mp4">
+  </video>
+</div>
+<a class="download" href="AD_LINK_1" target="_blank">Download</a>
+
+<!-- VIDEO 2 -->
+<div class="video-box" onclick="goAd('AD_LINK_2')">
+  <video muted autoplay loop playsinline>
+    <source src="https://files.catbox.moe/rxr3bj.mp4">
+  </video>
+</div>
+<a class="download" href="AD_LINK_2" target="_blank">Download</a>
+
+<!-- VIDEO 3 -->
+<div class="video-box" onclick="goAd('AD_LINK_3')">
+  <video muted autoplay loop playsinline>
+    <source src="https://files.catbox.moe/rxr3bj.mp4">
+  </video>
+</div>
+<a class="download" href="AD_LINK_3" target="_blank">Download</a>
+
+<!-- VIDEO 4 -->
+<div class="video-box" onclick="goAd('AD_LINK_4')">
+  <video muted autoplay loop playsinline>
+    <source src="https://files.catbox.moe/rxr3bj.mp4">
+  </video>
+</div>
+<a class="download" href="AD_LINK_4" target="_blank">Download</a>
+
+<!-- VIDEO 5 -->
+<div class="video-box" onclick="goAd('AD_LINK_5')">
+  <video muted autoplay loop playsinline>
+    <source src="https://files.catbox.moe/rxr3bj.mp4">
+  </video>
+</div>
+<a class="download" href="AD_LINK_5" target="_blank">Download</a>
+
+<script>
+function goAd(link){
+  window.open(link, '_blank');
+}
+</script>
+
+</body>
+</html>
